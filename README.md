@@ -58,3 +58,5 @@ given in `football.h`.
 
 You will also have to write your own Makefile to build your code. The file is
 included already but starts out mostly blank.
+
+<!-- Trigger GitHub Actions -->
