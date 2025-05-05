@@ -5,7 +5,7 @@ int main() {
     int score;
 
     while (1) {
-        printf("Enter the NFL score: ");
+        printf("\nEnter the NFL score: ");
         scanf("%d", &score);
 
         if (score <= 1) break; // STOP if 0 or 1
