@@ -1,38 +1,14 @@
-#ifndef __REPORT_H__
-#define __REPORT_H__
+#ifndef TEMPERATURE_H
+#define TEMPERATURE_H
 
-/* Add any function signatures you need here but do not modify the existing ones */
+float celsius_to_fahrenheit(float c);
+float fahrenheit_to_celsius(float f);
+float celsius_to_kelvin(float c);
+float kelvin_to_celsius(float k);
 
-/**
- * @brief Convert temperature in Celsius to Fahrenheit
- * 
- * @param celsius
- * @return float
- */
-float celsius_to_fahrenheit(float celsius);
+float to_celsius(float value, char scale);
+float from_celsius(float celsius, char target);
+const char* categorize(float celsius);
+const char* advisory(const char* category);
 
-/**
- * @brief Convert temperature in Fahrenheit to Celsius
- * 
- * @param fahrenheit
- * @return float
- */
-float fahrenheit_to_celsius(float fahrenheit);
-
-/**
- * @brief Convert temperature in Celsius to Kelvin
- * 
- * @param celsius
- * @return float
- */
-float celsius_to_kelvin(float celsius);
-
-/**
- * @brief Convert temperature in Kelvin to Celsius
- * 
- * @param celsius
- * @return float
- */
-float kelvin_to_celsius(float celsius);
-
-#endif /* __REPORT_H__ */
+#endif
