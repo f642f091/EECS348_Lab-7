@@ -10,7 +10,7 @@ int main() {
 
         if (score <= 1) break; // STOP if 0 or 1
 
-        printf("\nPossible combinations of scoring plays:\n");
+        printf("\nPossible combinations of scoring plays (Enter 0 to stop):\n");
         print_combinations(score); 
     }
 
