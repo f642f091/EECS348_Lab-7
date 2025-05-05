@@ -6,11 +6,10 @@ const char* labels[] = {"TD+2", "TD+1", "TD", "FG", "Safety"};
 int num_options = 5;
 
 void print_combination(int counts[]) {
-    for (int i = 0; i < num_options; i++) {
-        printf("%6d", counts[i]);
-    }
-    printf("\n");
+    printf("%d TD + 2pt, %d TD + FG, %d TD, %d 3pt FG, %d Safety\n",
+           counts[0], counts[1], counts[2], counts[3], counts[4]);
 }
+
 
 void find_combinations(int target, int index, int current_sum, int counts[]) {
     if (current_sum > target) return;
